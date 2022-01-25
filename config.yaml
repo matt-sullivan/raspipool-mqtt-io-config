@@ -1,6 +1,12 @@
 mqtt:
   host: homeassistant.local
-  topic_prefix: home
+  user: mqtt-devices
+  password: mqtt-password
+  status_payload_running: available
+  status_payload_stopped: unavailable
+  status_payload_dead: unavailable
+  ha_discovery:
+    enabled: yes
 
 # GPIO
 gpio_modules:
