@@ -36,7 +36,6 @@ sensor_modules:
 sensor_inputs:
   - name: pool_filter_pressure
     module: adc
-    type: temperature
     interval: 15
     ha_discovery:
       name: Pool Filter Pressure
