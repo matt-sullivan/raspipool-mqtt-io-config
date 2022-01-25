@@ -6,9 +6,10 @@ mqtt:
   status_payload_stopped: unavailable
   status_payload_dead: unavailable
   ha_discovery:
-    enabled: yes
+    enabled: true
+    name: "Raspberry Pi Zero-Pool MQTT-IO"
 
-# GPIO
+ # GPIO
 gpio_modules:
   # Use the Raspberry Pi built-in GPIO
   - name: rpi
@@ -19,6 +20,8 @@ digital_outputs:
   - name: pool_acid_pump
     module: rpi
     pin: 19
+    inverted: true
+    timed_set_ms: 10000
     ha_discovery:
       name: Pool Acid Pump
 
