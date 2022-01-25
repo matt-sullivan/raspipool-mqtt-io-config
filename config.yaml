@@ -30,8 +30,8 @@ sensor_modules:
   - name: adc
     module: ads1x15
     type: ADS1115
-    i2c_bus_num: 1
     chip_addr: 0x48
+    pin: 0
 
 sensor_inputs:
   - name: pool_filter_pressure
