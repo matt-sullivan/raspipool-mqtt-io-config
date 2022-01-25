@@ -10,9 +10,11 @@ gpio_modules:
 
 digital_outputs:
   # Pin 1 is an output connected to a light
-  - name: acid_pump
+  - name: pool_acid_pump
     module: rpi
     pin: 19
+    ha_discovery:
+      name: Pool Acid Pump
 
 # Sensors
 # sensor_modules:
