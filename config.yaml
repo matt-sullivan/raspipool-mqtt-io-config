@@ -22,6 +22,8 @@ digital_outputs:
     pin: 19
     inverted: true
     timed_set_ms: 10000
+    initial: "high"
+    publish_initial: true
     ha_discovery:
       name: Pool Acid Pump
 
