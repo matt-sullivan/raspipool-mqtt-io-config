@@ -5,6 +5,8 @@ mqtt:
   status_payload_running: available
   status_payload_stopped: unavailable
   status_payload_dead: unavailable
+  client_id: mqtt-io-pool
+  topic_prefix: mqtt-io-pool
   ha_discovery:
     enabled: true
     name: "Raspberry Pi Zero-Pool MQTT-IO"
