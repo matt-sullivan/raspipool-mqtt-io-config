@@ -25,5 +25,6 @@ digital_outputs:
     timed_set_ms: 10000
     initial: "high"
     publish_initial: true
+    retain: true
     ha_discovery:
       name: Pool Acid Pump
