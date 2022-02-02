@@ -25,17 +25,3 @@ digital_outputs:
     publish_initial: true
     ha_discovery:
       name: Pool Acid Pump
-
-sensor_modules:
-  - name: adc
-    module: ads1x15
-    type: ADS1115
-    chip_addr: 0x48
-    pin: 0
-
-sensor_inputs:
-  - name: pool_filter_pressure
-    module: adc
-    interval: 15
-    ha_discovery:
-      name: Pool Filter Pressure
